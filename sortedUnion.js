@@ -16,3 +16,7 @@ function uniteUnique (arr) {
       //If array contains value of arguments. It returns -1 if it does not. 
       //Push values into array
       //Return array
+
+      
+      //ARGUMENTS OBJECT - The arguments object contains an array of the arguments used when the function was called.
+      
