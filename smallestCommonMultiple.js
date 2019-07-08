@@ -21,3 +21,6 @@ function smallestCommons (arr) {
 //If remainder is equal to 0 then increment div by 1 and check the next number 
 //Once a false is reached that increment num one above arr[1]
 //Return result
+
+
+//Euclid's Algorithm - algorithm for finding the greatest common divisor of 2 numbers (a,b).
