@@ -1,0 +1,31 @@
+// Sum all the prime numbers up to and including the provided number. Prime numbers are greater than 1 and only have 2 divisors, 1 and itself. The provided number may not be prime. 
+
+function sumPrimes(num) {
+  let result = [];
+  
+  for (let i = 2; i <= num; i ++) {
+    for (let x = 2; x <= num; x ++) {
+      
+      if (i === x) {
+        result.push(i)
+      }
+      
+      if (i % x === 0) {
+        break;
+      }
+    }
+  }
+  return result.reduce(function (x,y) {
+    return x + y;
+  });
+}
+
+//Create variable to store result and reduce later
+//Use for loop to iterate through (num) starting at 2(1st prime), to check if num is prime
+//Check the inputted number by all the numbers leading up to it
+//If they're equal it's prime, push to result array
+//If true it isn't prime, break the loop
+//Take result, reduce it for answer and return it
+
+//reduce() - method reduces the array to a single value. It executes a provided function for each value of the array (from left to right). The return value of the function in an accumulator (result/total)
+// array.reduce(function(total, currentValue, currentIndex, arr), initial value)
